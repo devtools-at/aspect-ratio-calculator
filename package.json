@@ -1,0 +1,44 @@
+{
+  "name": "@devtools-at/aspect-ratio-calculator",
+  "version": "1.0.0",
+  "description": "Calculate aspect ratios",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/index.js",
+      "import": "./dist/index.mjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "aspect-ratio-calculator",
+    "devtools",
+    "utility",
+    "converter",
+    "encoder",
+    "decoder"
+  ],
+  "author": "DevTools.at",
+  "license": "MIT",
+  "homepage": "https://devtools.at/tools/aspect-ratio-calculator",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/devtools-at/aspect-ratio-calculator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/devtools-at/aspect-ratio-calculator/issues"
+  },
+  "devDependencies": {
+    "tsup": "^8.0.0",
+    "typescript": "^5.3.0"
+  }
+}
